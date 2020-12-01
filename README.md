@@ -1,3 +1,7 @@
+Quix's edit:
+Because I'm too lazy to figure out why my config file isn't working. So, I just made this colored red by default. Feel free to use it. If I can figure out how to compile it I'll add a pre-compiled version here. That is all.
+
+
 Last updated: Nov 11, 2008
 ~Keripo
 
