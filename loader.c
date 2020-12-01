@@ -48,7 +48,7 @@ static void test_contrast (config_t *conf)
   int redraw = 1;
   int kbdstate = 0, lastkbd = 0;
   int backlight = conf->backlight;
-  uint16 linecolor = 0xffff;
+  uint16 linecolor = 0xf800;
   ipod_t *ipod = ipod_get_hwinfo();
 
   menu_init();
