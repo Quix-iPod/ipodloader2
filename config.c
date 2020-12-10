@@ -1,3 +1,4 @@
+//note: this file has the config stuff
 #include "bootloader.h"
 #include "ipodhw.h"
 #include "minilibc.h"
@@ -124,7 +125,7 @@ void config_init(void)
 {
     char *configdata, *p;
     int fd, len, firstitem = 1;
-
+//Quix: it seems that config stuff is located here
     mlc_memset (&config, 0, sizeof (config));
     mlc_memset (&configimgs, 0, sizeof (configimgs));
     config.image = configimgs;
@@ -132,8 +133,8 @@ void config_init(void)
     config.def       = 1; // default item index in menu, 1-based
     config.backlight = 1;
     config.usegradient = 1;
-    config.bgcolor   = fb_rgb(0,0,255);
-    config.hicolor   = fb_rgb(64,128,0);
+    config.bgcolor   = fb_rgb(160,0,0); //Quix: the background color is here
+    config.hicolor   = fb_rgb(64,128,0); // the text highlight color is here
     config.beep_time = 50;
     config.beep_period = 30;
     config.disable_boot_tune = 0;
