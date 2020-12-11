@@ -103,7 +103,7 @@ const char *kernnames[] = {
 	// we can also read the kernel from the firmware partition:
 	"(hd0,0)/linx",
 	0 };
-
+//below seems to be the boot sound. idk what its format is, but it is probably just txt renammed to pzm?
 const char *tunenames[] = {
 	"(hd0,1)/boot.pzm",
 	"(hd0,1)/Notes/boot.pzm",
@@ -133,8 +133,8 @@ void config_init(void)
     config.def       = 1; // default item index in menu, 1-based
     config.backlight = 1;
     config.usegradient = 1;
-    config.bgcolor   = fb_rgb(160,0,0); //Quix: the background color is here
-    config.hicolor   = fb_rgb(64,128,0); // the text highlight color is here
+    config.bgcolor   = fb_rgb(160,0,0); //Quix: the background color is here (edited to be a dark red)
+    config.hicolor   = fb_rgb(51,51,51); // the text highlight color is here (edited to be a grey)
     config.beep_time = 50;
     config.beep_period = 30;
     config.disable_boot_tune = 0;
